@@ -1,0 +1,5 @@
+"BROKEN","EPIC","FAILED","FEATURE","PASSED","SKIPPED","STORY","UNKNOWN"
+"0","","0","Tests for Login page saucedemo.com: UC-1: Test Login form with empty credentials","2","0","","0"
+"0","","0","Tests for Login page saucedemo.com: UC-2: Test Login form with missing password","2","0","","0"
+"0","","0","Login Form Tests (Data Driven) - BDD style","6","0","","0"
+"0","","0","Tests for Login page saucedemo.com: UC-3: Login with valid credentials","2","0","","0"
