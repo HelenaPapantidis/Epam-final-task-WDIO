@@ -112,15 +112,10 @@ class LoginPage extends BasePage {
    */
   async getErrorMessageText() {
     await this.errorMessage.waitForDisplayed({ timeout: 5000 });
-    return await this.errorMessage.getText();
+    return this.errorMessage.getText();
   }
 
-  /**
-   * Checks if the error message is visible
-   */
-  async isErrorDisplayed() {
-    return await this.isElementDisplayed(this.errorMessage);
-  }
+ 
 }
 
 module.exports = new LoginPage();

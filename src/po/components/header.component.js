@@ -1,8 +1,8 @@
-const { $ } = require('@wdio/globals');
+const { $ } = require("@wdio/globals");
 
 const SELECTORS = {
-  root: 'header',
-  logo: '.app_logo',
+  root: "header",
+  logo: ".app_logo",
 };
 
 class HeaderComponent {
@@ -16,11 +16,11 @@ class HeaderComponent {
 
   async getLogoText() {
     await this.logoElement.waitForDisplayed();
-    return await this.logoElement.getText();
+    return this.logoElement.getText();
   }
 
   async isLogoDisplayed() {
-    return await this.logoElement.isDisplayed();
+    return this.logoElement.isDisplayed();
   }
 }
 

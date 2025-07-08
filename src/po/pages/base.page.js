@@ -17,23 +17,9 @@ class BasePage {
    */
   async getTextFromElement(element, timeout = 5000) {
     await element.waitForDisplayed({ timeout });
-    return await element.getText();
+    return element.getText();
   }
 
-  /**
-   * Checks whether an element is displayed within the timeout
-   * @param {WebdriverIO.Element} element
-   * @param {number} timeout
-   * @returns {Promise<boolean>}
-   */
-  async isElementDisplayed(element, timeout = 5000) {
-    try {
-      await element.waitForDisplayed({ timeout });
-      return true;
-    } catch (e) {
-      return false;
-    }
-  }
 
   /**
    * Clears input field

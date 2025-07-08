@@ -21,7 +21,7 @@ class DashboardPage extends BasePage {
    * @returns {Promise<string>}
    */
   async getPageTitleText() {
-    return await this.getTextFromElement(this.pageTitle);
+    return this.getTextFromElement(this.pageTitle);
   }
 
   /**
@@ -29,7 +29,7 @@ class DashboardPage extends BasePage {
    * @returns {Promise<string>}
    */
   async getBrowserTitle() {
-    return await browser.getTitle();
+    return browser.getTitle();
   }
 
   /**
@@ -37,7 +37,7 @@ class DashboardPage extends BasePage {
    * @returns {Promise<string>}
    */
   async getHeaderLogoText() {
-    return await this.header.getLogoText();
+    return this.header.getLogoText();
   }
 
   /**
@@ -45,7 +45,7 @@ class DashboardPage extends BasePage {
    * @returns {Promise<boolean>}
    */
   async isHeaderLogoDisplayed() {
-    return await this.header.isLogoDisplayed();
+    return this.header.isLogoDisplayed();
   }
 }
 
