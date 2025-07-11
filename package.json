@@ -6,7 +6,7 @@
   "description": "Final Project for EPAM Automation testing with Javascript",
   "scripts": {
     "testall": "wdio run wdio.conf.js",
-    "teststanalone":"wdio run wdio.conf.js --spec ./src/specs/login.spec.js",
+    "teststanalone": "wdio run wdio.conf.js --spec ./src/specs/login.spec.js",
     "testparametrised": "wdio run wdio.conf.js --spec ./src/specs/login.parametrized.spec.js",
     "report:generate": "allure generate allure-results --clean -o allure-report",
     "report:open": "allure open allure-report"
@@ -23,6 +23,7 @@
     "chalk": "^4.1.2"
   },
   "dependencies": {
-    "dotenv": "^16.5.0"
+    "dotenv": "^16.5.0",
+    "winston": "^3.17.0"
   }
 }
